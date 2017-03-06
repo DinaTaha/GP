@@ -91,8 +91,8 @@ public class TabFragment1 extends Fragment implements SensorEventListener {
                 // check if GPS enabled
                 if(gps.canGetLocation()){
                     tv_2.setText(String.valueOf(gps.getLatitude())+" "+String.valueOf(gps.getLongitude()));
-                    tv_3.setText(String.valueOf(gps2.getspeed()));
-                    tv_4.setText(String.valueOf(gps2.getRealDistance()));
+                    //tv_3.setText(String.valueOf(gps2.getspeed()));
+                    //tv_4.setText(String.valueOf(gps2.getRealDistance()));
 
                 }
                 else{
@@ -546,17 +546,6 @@ class MyService extends Service
 
         // Distance in Metres
         return r * theta;
-    }
-
-
-    public double getRealDistance (){
-       return distance;
-    }
-
-
-
-    public double getspeed (){
-        return speed;
     }
 }
 

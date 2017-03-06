@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/holo_blue_dark">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="111dp"
+                    android:id="@+id/UpperLayout"
+                    android:layout_marginTop="0dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:paddingTop="0dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/LeftUpperLayout">
+
+                        <TextView
+                            android:text="Stroke Rate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:id="@+id/StrokeRate"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimary"
+                        android:paddingLeft="3dp"
+                            android:typeface="monospace" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:id="@+id/StrokeRateText"
+                            android:layout_weight="0.60"
+                            android:textSize="16sp"
+                            android:paddingLeft="3dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimary"
+                            android:background="@color/colorPrimaryDark" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/RightUpperLayout"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:text="Elapsed Time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ElapsedTime"
+                            android:textSize="16sp"
+                            android:paddingLeft="3dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimary"
+                            android:typeface="monospace" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:ems="10"
+                            android:textSize="30sp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textColor="#d41709"
+                            android:id="@+id/ElapsedTimeText"
+                            android:background="@color/colorPrimaryDark"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="0dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="111dp"
+                    android:id="@+id/MiddelLayout">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/LeftMiddelLayout">
+
+                        <TextView
+                            android:text="Distance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:id="@+id/Distance"
+                            android:textStyle="bold"
+                            android:paddingLeft="3dp"
+                            android:textColor="@color/colorPrimary"
+                            android:typeface="monospace" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:id="@+id/DistanceText"
+                            android:background="@color/colorPrimaryDark" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/RightMiddelLayout">
+
+                        <TextView
+                            android:text="Speed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:id="@+id/Last10"
+                            android:paddingLeft="3dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimary"
+                            android:typeface="monospace" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:id="@+id/Last10Text"
+                            android:background="@color/colorPrimaryDark" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LowerLayout">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="300dp"
+                        android:layout_height="111dp"
+                        android:id="@+id/LeftLowerLayout">
+
+                        <TextView
+                            android:text="Stroke Count"
+                            android:layout_width="189dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:id="@+id/StrokeCount"
+                            android:paddingLeft="3dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimary"
+                            android:typeface="monospace" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:id="@+id/StrokeCountText"
+                            android:background="@color/colorPrimaryDark" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="111dp"
+                        android:id="@+id/RightLowerLayout">
+
+
+                        <TextView
+                            android:text="Clock "
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:id="@+id/Clock"
+                            android:textStyle="bold"
+                            android:paddingLeft="3dp"
+                            android:textColor="@color/colorPrimary"
+                            android:typeface="monospace" />
+
+
+                        <TextClock
+                            android:id="@+id/textClock"
+                            android:layout_width="202dp"
+                            android:layout_height="match_parent"
+                            android:format12Hour="hh:mm:ss a"
+                            android:gravity="center"
+                            android:ems="10"
+                            android:textColor="#d41709"
+                            android:textSize="30sp"
+                            android:textStyle="bold"
+                            android:background="@color/colorPrimaryDark" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:text="START"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Start"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:onClick="Calculating"
+                android:background="@android:color/holo_orange_light" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
